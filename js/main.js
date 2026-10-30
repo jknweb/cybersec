@@ -202,12 +202,12 @@
           var q = points[j];
           var d = Math.hypot(p.x - q.x, p.y - q.y);
           if (d < 140) {
-            ctx.strokeStyle = "rgba(0,168,142," + (1 - d / 140) * 0.35 + ")";
+            ctx.strokeStyle = "rgba(255,78,0," + (1 - d / 140) * 0.35 + ")";
             ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
           }
         }
-        ctx.fillStyle = "rgba(0,168,142,.6)";
+        ctx.fillStyle = "rgba(255,78,0,.6)";
         ctx.beginPath(); ctx.arc(p.x, p.y, 2, 0, Math.PI * 2); ctx.fill();
       }
       requestAnimationFrame(draw);
